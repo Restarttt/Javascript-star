@@ -1,2 +1,2 @@
 # Javascript-star
-用于初学javascript记录练习
+用于初学javascript练习记录
