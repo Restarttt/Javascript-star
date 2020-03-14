@@ -1,43 +1,45 @@
 // 实现一个函数，获取1-200的既能被3整除也能被5整数的数的最大值
 
-var max = 0;
+
 
 function getSum() {
+    var max = 0;
     for (var a = 1; a <= 200; a++) {
-        if (a % 3 == 0 && a % 8 == 0) {
-            max = a;
-
-
+        if (a % 3 == 0 && a % 5 == 0) {
+            if (a > max) {
+                max = a;
+            }
         }
     }
-    return (max);
+    return max;
 
 }
 console.log(getSum())
 
 // 实现一个函数，获取1-200的总和
-var sum = 0;
+
 
 function getSum() {
+    var sum = 0;
     for (var a = 1; a <= 200; a++) {
         sum += a;
     }
     return (sum);
 }
-
 console.log(getSum());
 
 
 // 实现一个函数，获取1-200中奇数的总和
-var sum = 0;
+
 
 function getSum() {
+    var sum = 0;
     for (var a = 0; a <= 200; a++) {
         if (a % 2 != 0) {
             sum += a;
         }
     }
-    return (sum);
+    return sum;
 }
 console.log(getSum());
 
@@ -52,8 +54,20 @@ function getSum(a) {
         a = false;
 
     }
-    return (a);
+    return a;
 
 }
 // getSum(41);
+console.log(getSum(923));
+
+var a = 0;
+var age = (a % 2 == 0 ? ture : flase)
+
+
+
+
+function getSum(a) {
+    var age = (a % 2 == 0 ? ture : flase)
+    return;
+}
 console.log(getSum(923));
