@@ -105,13 +105,15 @@ console.log(getave([3, -4, 6]))
 function getave(arr) {
     var sum = 0;
     var ave = 0;
+    var count = 0;
     for (var i = 0; i < arr.length; i++) {
         if (arr[i] % 2 == 0) {
             sum += arr[i];
+            count += 1;
             console.log(sum, i)
         }
     }
-    ave = sum / i;
+    ave = sum / count;
     return ave;
 }
 console.log(getave([3, -4, 6, 5, -9, 7, 8]))
