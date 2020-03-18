@@ -118,9 +118,6 @@ function searchIndex(arr, target);
 
 // indexof方法
 
-a = [3, -3, 9, -11, 10, 6, 0];
-a.indexOf(0)
-
 function search(arr) {
     var num = 0;
     num = arr.indexOf(10);
@@ -148,30 +145,31 @@ console.log(search([3, -3, 9, -11, 10, 6, 9], 9))
 
 
 function getnum(arr1, arr2) {
-    var num = 0;
-    // var arr = (arr1.length > arr2.length ? arr1.length : arr2.length);
+    var num = [];
     for (var i = 0; i < arr1.length; i++) {
         if (arr1[i] == arr2[i]) {
-            num = arr1[i];
+            num.push(arr1[i]);
             console.log(i);
-
-
         }
-
-
     }
     return num;
-
 }
-console.log(getnum(([3, -3, 9, -11, 10, 6, 0], [3, 31, 9, -11, 8, 6, 1]))
+console.log(getnum([3, -3, 9, -11, 10, 6, 0], [3, 31, 9, -11, 8, 6, 1]))
 
 
-        // 8、从有序数组中，查找指定的元素 [循环方法、二分查找法]
 
-        // 9、实现数组排序
-        [1, 56, 23, 2, 78, 34] => [1, 2, 23, 34, 56, 78].
 
-        // 10、实现Fibornacci数列 [递归版本、非递归版本]
-        1 1 2 3 5 8 13 21
 
-        // 10、学习快速排序
+// 8、从有序数组中，查找指定的元素 [循环方法、二分查找法]
+
+// 9、实现数组排序
+[1, 56, 23, 2, 78, 34] => [1, 2, 23, 34, 56, 78].
+
+var a = ([1, 56, 23, 2, 78, 34])
+
+
+
+// 10、实现Fibornacci数列 [递归版本、非递归版本]
+1 1 2 3 5 8 13 21
+
+// 10、学习快速排序
