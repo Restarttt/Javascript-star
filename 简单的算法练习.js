@@ -103,15 +103,17 @@ console.log(geteven([2311, 1, -33, 44, 12, -1, 2400]))
 [1, 2, 78, 23, 2, 23] => [1, 2, 78, 23]
 
 function getnum(arr) {
+    var num = [];
     for (var i = 0; i < arr.length; i++) {
-        if (arr[i] == arr[i + 1]) {
-            a = arr.indexof(3);
+        if (num.indexOf(arr[i]) == -1) {
+            num.push(arr[i]);
+            console.log(num, i);
         }
     }
-    return
+    return num;
 }
 
-console.log(serach([3, -3, -3, 6, 9, -11, 10, -11, -11, 6, 0]))
+console.log(getnum([3, -3, -3, 6, 9, -11, 10, -11, -11, 6, 0]))
 
 // 6、数组中查找指定元素
 function searchIndex(arr, target);
@@ -129,7 +131,7 @@ console.log(search([3, -3, 9, -11, 10, 6, 0]))
 // 循环遍历方法
 
 function search(arr, num) {
-    var a = -1;
+    var a = 0;
     for (var i = 0; i < arr.length; i++) {
         if (arr[i] == num) {
             a = i;
@@ -154,7 +156,7 @@ function getnum(arr1, arr2) {
     }
     return num;
 }
-console.log(getnum([3, -3, 9, -11, 10, 6, 0], [3, 31, 9, -11, 8, 6, 1]))
+console.log(getnum([3, -3, 9, -11, 10, 6, 0], [3, 31, -11, 9, 8, 1, 6]))
 
 
 

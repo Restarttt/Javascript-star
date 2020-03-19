@@ -1,5 +1,5 @@
 // 1、 去重
-var a = ([3, 5, 9, 7, 6, 3, 4, 9, 7, 6])
+var a = [3, 5, 9, 7, 6, 3, 4, 9, 7, 6]
 
 function getnum(arr) {
     var b = [];
@@ -14,7 +14,7 @@ console.log(getnum(a));
 
 
 // 2、 找出数组中第二大的偶数
-var a = ([430, 100, 80, -22, 3, 7, 140, -11, 90, 420])
+var a = [430, 100, 80, -22, 3, 7, 140, -11, 90, 420]
 
 function getsecond(arr) {
     var max = null;
@@ -36,7 +36,7 @@ console.log(getsecond(a))
 
 
 // 3、 找出数组中最大的偶
-var a = ([421, 100, 80, -22, 3, 7, 66, -66, 10, 420])
+var a = [421, 100, 80, -22, 3, 7, 66, -66, 10, 420]
 
 function geteven(arr) {
     var maxeven = null;
@@ -66,8 +66,9 @@ function geteven(arr) {
     return even;
 }
 console.log(geteven(a))
-    // 2、 找出数组中第二小的奇数
-var a = ([420, 7, 80, -11, 3, 9, 77, -1, 13, 150])
+
+// 2、 找出数组中第二小的奇数
+var a = [420, 7, 80, -11, 3, 9, 77, -1, 13, 150]
 
 function getodd(arr) {
     var maxodd = null;
@@ -88,7 +89,7 @@ console.log(getodd(a))
 
 
 // 3、 找出数组中所有奇数之和
-var a = ([420, 7, 80, -11, 3, 7, 77, -1, 13, 150])
+var a = [420, 7, 80, -11, 3, 7, 77, -1, 13, 150]
 
 function getsum(arr) {
     var sum = 0;
@@ -105,17 +106,19 @@ console.log(getsum(a));
 // 4、 找出两个数组中相同的数
 
 
-var c = ([420, 7, 80, -11, 3, 7, 77, -11, 13, 3, 0])
-var d = ([13, 0, 80, 3, -11, -14, -20, -50, 10, 0])
+var c = [420, 7, 80, 3, 7, 77, -11, 13, 3, 0]
+var d = [13, 0, 3, -11, -14, -20, -50, 10, 80]
 
 function getnum(arr, target) {
     var num = [];
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i] == target[i]) {
-            num.unshift(arr[i]);
+    for (var i = 0; i < target.length; i++) {
+        if (arr.indexOf(target[i]) !== -1) {
+            num.unshift(target[i]);
             console.log(num, i);
         }
     }
+    console.log(arr, target);
     return num;
+
 }
-console.log(getnum([3, -3, 9, -11, 10, 6, 0], [3, 31, 9, -11, 8, 6, 1]))
+console.log(getnum(c, d))
