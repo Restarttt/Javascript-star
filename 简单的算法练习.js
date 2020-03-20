@@ -141,7 +141,7 @@ function search(arr, num) {
     }
     return a;
 }
-console.log(search([3, -3, 9, -11, 10, 6, 9], 9))
+console.log(search([3, -3, 9, -11, 10, 6, 9], 6))
 
 // 7、找出两个数组中相同的数
 
