@@ -28,9 +28,13 @@ var n = {
     color: 'blue'
 
 }
+console.log(n.name)
+
+
+// 定义一个变量只能通过[]访问属性值
 var a = 3;
 
-console.log(n.a)
+
 console.log(n[a])
 
 

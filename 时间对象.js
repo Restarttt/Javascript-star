@@ -8,14 +8,14 @@
 
 
 
-let = new Date();
-console.log(let.getMinutes())
-console.log(let.getFullYear())
-console.log(let.getMonth() + 1)
-console.log(let.getDate())
-console.log(let.getDay())
-console.log(let.getHours())
-console.log(let.getSeconds())
+let now = new Date();
+console.log(now.getMinutes())
+console.log(now.getFullYear())
+console.log(now.getMonth() + 1)
+console.log(now.getDate())
+console.log(now.getDay())
+console.log(now.getHours())
+console.log(now.getSeconds())
 
 VM280: 2 0
 VM280: 3 2020
