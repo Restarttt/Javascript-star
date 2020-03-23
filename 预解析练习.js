@@ -46,7 +46,7 @@ console.log(count);
 //3.执行代码（从上往下）  全局变量被赋值   count =10  test function   函数变量 my_age = 100   count(当前作用域没有) scope ==> global
 // 4.全局变量  count = 100  test function  函数变量  第一次打印为10 count= 100  第二次打印是100
 
-// console.log(get_age); == undefined   
-// var get_age = test(); == test的返回值 ==>functon(); 
+// console.log(get_age); == 声明提前  undefined   
+// var get_age = test(); == undefined  test的返回值 ==>functon(); 
 // console.log(get_age()); == 调用get-age的函数体 ===> 100
 // console.log(count);==100
