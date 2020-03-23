@@ -28,10 +28,11 @@ let a = 3; //a undefined  test function   scope == null
 function test() {
     let a = 5; //a  5   
     return function() {
-        a += 1
+        a += 1;
+        console.log(a)
         let a = 9;
         console.log(a)
     }
 }
-test()() //   function()   a = 9 + 1 = 10      打印 9   
+test()() //   function()        打印 9   
 console.log(a) //3   gloabl
