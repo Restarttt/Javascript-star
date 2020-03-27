@@ -1,0 +1,44 @@
+<!-- 1、点击一个元素，它的背景色和字体颜色，都随机变化 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            width: 200px;
+            height: 200px;
+            background-color: #FFB6C1;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        span {
+            line-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <span> BLACK PINK</span>
+
+    </div>
+    <script>
+        var a = document.querySelector('.first')
+        a.onclick = function() {
+            var r = Math.random() * 255;
+            var p = Math.random() * 255;
+            var k = Math.random() * 255;
+            a.style.color = "rgb(" + r + "," + p + "," + k + ")";
+            a.style.backgroundColor = "rgb(" + r + "," + k + "," + p + ")";
+        }
+    </script>
+
+
+</body>
+
+</html>
+<!-- let obj ={ a : function(arr){ };} obj.a() -->

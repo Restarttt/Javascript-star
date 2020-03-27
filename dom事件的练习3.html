@@ -1,0 +1,36 @@
+<!-- 3、实现一个简单的时钟 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .num {
+            font-size: 20px;
+            color: pink;
+            margin: 50px 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="num">
+        <!-- 100 -->
+    </div>
+    <script>
+        let a = document.querySelector('.num');
+        let b = 100;
+        var timer = setInterval(() => {
+            // b--;
+            a.innerHTML = b--;
+            if (b == -1) {
+                clearInterval(timer);
+            }
+        }, 1000)
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!-- 2、实现一个元素的背景色 可以自动随机变化 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            width: 200px;
+            height: 200px;
+            background-color: #FFB6C1;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        span {
+            line-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <span> BLACK PINK</span>
+    </div>
+    <script>
+        var a = document.querySelector('.first');
+        setInterval(() => {
+            var r = Math.random() * 255;
+            var g = Math.random() * 255;
+            var b = Math.random() * 255;
+            a.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+
+        }, 1000);
+    </script>
+</body>
+
+</html>
