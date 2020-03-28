@@ -29,11 +29,12 @@
     <script>
         var a = document.querySelector('.first')
         a.onclick = function() {
-            var r = Math.random() * 255;
-            var p = Math.random() * 255;
-            var k = Math.random() * 255;
+            var r = Math.floor(Math.random() * 255);
+            var p = Math.floor(Math.random() * 255);
+            var k = Math.floor(Math.random() * 255);
             a.style.color = "rgb(" + r + "," + p + "," + k + ")";
             a.style.backgroundColor = "rgb(" + r + "," + k + "," + p + ")";
+
         }
     </script>
 

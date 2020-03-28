@@ -7,9 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="jquery-3.3.1/jquery-3.3.1/jquery-3.3.1.js"></script>
+    <style>
+        button {
+            border: 3px solid pink;
+            width: 100px;
+            height: 50px;
+            margin: 50px 50px;
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
+    <button>
+        点击这里
+
+    </button>
+    <script>
+        let a = $('button');
+        a.onclick = function() {
+            var p = Math.random() * 255;
+            var r = Math.random() * 255;
+            a.css('border-color', '#00ffff')
+            a.css('background-color', '#00ff')
+        }
+    </script>
 
 </body>
 

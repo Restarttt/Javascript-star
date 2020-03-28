@@ -22,10 +22,11 @@
     <script>
         let a = document.querySelector('.num');
         let b = 100;
+        // let b = document.querySelector();
         var timer = setInterval(() => {
             // b--;
             a.innerHTML = b--;
-            if (b == -1) {
+            if (b == 0) {
                 clearInterval(timer);
             }
         }, 1000)

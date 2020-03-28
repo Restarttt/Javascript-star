@@ -1,0 +1,50 @@
+<!-- 2、实现一个计数器功能， 一个 div 和 一个按钮， div显 示当前秒数 100s，当点击按钮， div显示逐步变化为 99s 98s 97s 一直到 0 结束 （setTimeout setInterval） -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.3.1/jquery-3.3.1/jquery-3.3.1.js"></script>
+    <style>
+        * {
+            margin: 100px 100px;
+        }
+        
+        .time {
+            width: 100px;
+            height: 100px;
+            font-size: 18px;
+            color: #ff00ff;
+            /* border: 2px solid #ff0; */
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="time">
+        100
+    </div>
+    <button>
+        点这里
+
+    </button>
+    <script>
+        let but = $('button')
+        let s = $('.time')
+        let num = 100;
+        but.onclick = function(a) {
+            but;
+        }
+        let a = setInterval(() => {
+            num.innerHTML = num--;
+            if (s == 1) {
+                clearInterval(a);
+            }
+        }, 1000)
+    </script>
+</body>
+
+</html>
