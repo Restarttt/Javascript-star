@@ -25,25 +25,24 @@
 
 <body>
     <div class="time">
-        100
+        <!-- 100 -->
     </div>
     <button>
         点这里
 
     </button>
     <script>
-        let but = $('button')
-        let s = $('.time')
-        let num = 100;
-        but.onclick = function(a) {
-            but;
-        }
-        let a = setInterval(() => {
-            num.innerHTML = num--;
-            if (s == 1) {
-                clearInterval(a);
-            }
-        }, 1000)
+        var b = $('.time');
+        let times = 100;
+        $('button').click(function() {
+            let a = setInterval(() => {
+                b.html(times--);
+                if (times == -1) {
+                    clearInterval(a);
+                }
+            }, 1000)
+
+        })
     </script>
 </body>
 

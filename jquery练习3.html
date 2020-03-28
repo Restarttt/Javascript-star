@@ -1,0 +1,51 @@
+<!-- 3、实现一个可变化的圆， 初始圆的半径为 20px, 当点圆内的时候， 半径逐步变化 从20px 到 100px, 再从 100px 到 20px, 再点点击的时候， 动画停止 -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.3.1/jquery-3.3.1/jquery-3.3.1.js"></script>
+    <style>
+        .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: pink;
+            margin: 100px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">
+
+    </div>
+    <script>
+        $('.circle').click(function() {
+            var a = 20;
+            let b = setInterval(() => {
+                a++;
+                $('.circle').css('width', a + 'px')
+                $('.circle').css('height', a + 'px')
+                if (a == 100) {
+                    clearInterval(b);
+                    let c = setInterval(() => {
+                        a--;
+                        $('.circle').css('width', a + 'px')
+                        $('.circle').css('height', a + 'px')
+                    }, 100)
+                    if (a == 20) {
+                        clearInterval(c);
+                    }
+
+                }
+            }, 100)
+
+        })
+    </script>
+</body>
+
+</html>
