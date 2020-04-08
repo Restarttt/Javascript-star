@@ -36,7 +36,7 @@ console.log(getsecond(a))
 
 
 // 3、 找出数组中最大的偶
-var a = [421, 100, 80, -22, 3, 7, 66, -66, 10, 420]
+let a = [421, 100, 80, -22, 3, 7, 66, -66, 10, 420]
 
 function geteven(arr) {
     var maxeven = null;
@@ -44,6 +44,7 @@ function geteven(arr) {
         if (arr[i] % 2 == 0) {
             if (arr[i] > maxeven || maxeven == null) {
                 maxeven = arr[i];
+                console.log(maxeven);
             }
         }
     }
